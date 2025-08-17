@@ -1,11 +1,10 @@
 function formatMessage(message, maxLength) {
-    const idt = maxLength - 1;
-    if (message.length <= idt) {
+    if (message.length <= maxLength) {
         return message;
     }
     
     else {
-        return `${message.slice(0, idt)}...`
+        return `${message.slice(0, maxLength)}...`
     }
 }
 
